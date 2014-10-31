@@ -23,5 +23,7 @@ android:
     - sys-img-armeabi-v7a-android-19
     - sys-img-x86-android-17
 
-chmod 774 gradlew
-./gradlew build
+script:
+  - echo "Travis branch is $TRAVIS_BRANCH"
+  - chmod 774 gradlew
+  - ./gradlew build
